@@ -12,6 +12,13 @@ namespace Shape
         public double Trinagleheight { get; set; }
         public double Edge           { get; set; }
 
+        public Triangle()
+        {
+            Trinaglebase   = 0.0;
+            Trinagleheight = 0.0;
+            Edge           = 0.0;
+        }
+
         public override double CalculateArea()
         {
             Area = Math.Round((0.5 * Trinaglebase * Trinagleheight),3);

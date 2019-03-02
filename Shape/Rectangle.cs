@@ -12,6 +12,13 @@ namespace Shape
         public double Height { get; set; }
         public double Length { get; set; }
 
+        public Rectangle()
+        {
+            Width  = 0;
+            Height = 0;
+            Length = 0;
+        }
+
         public override double CalculateArea()
         {
             Area = Math.Round((Height * Width), 3);

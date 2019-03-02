@@ -11,6 +11,12 @@ namespace Shape
         public double Radious { get; set; }
         public double Height  { get; set; }
 
+        public Circle()
+        {
+            Radious = 0;
+            Height  = 0;
+        }
+
         public override double CalculateArea()
         {
             Area = Math.Round((Math.PI * (Radious * Radious)), 3);
